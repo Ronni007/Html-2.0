@@ -24,15 +24,30 @@
   </section>
   <section>
     <h2> Deja tu comentario </h2>
-   <form action="">
+   <form action="controlador" method="post" enctype="multipart/form-data">
     <div>
     <input type="text" placeholder="Su nombre" value="Ronald Lipez" maxlength="40" minlength="10" readonly required>
+    </div>
+    <div>
+      <input type="number" min="10" max="40" step="0.5" required title="¿Esto que es?">
     </div>
     <div>
     <input type="text" pattern placeholder="Correo electrónico" required >
     </div>
     <div>
-    <textarea name="contenido" id="contenido" rows="20" cols="50" placeholder="Su comentario" required> Deja tus comentarios </textarea>
+    <input type="date" required >
+    </div>
+    <div>
+    <input type="time" required >
+    </div>
+    <div>
+    <input type="text" required >
+    </div>
+    <div>
+      <input type="file" accept="application/pdf" multiple="multiple" >
+    </div>
+    <div>
+    <textarea name="contenido" id="contenido" rows="20" cols="50" placeholder="Su comentario" required> </textarea>
     </div>
     <div>
     <button type="submit"> Enviar </button>
