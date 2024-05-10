@@ -24,15 +24,15 @@
   </section>
   <section>
     <h2> Deja tu comentario </h2>
-   <form action="controlador" method="post" enctype="multipart/form-data">
+    <form action="controlador" method="post" enctype="multipart/form-data" name="formulario" autocomplete="of">
     <div>
-    <input type="text" placeholder="Su nombre" value="Ronald Lipez" maxlength="40" minlength="10" readonly required>
+    <input type="text" placeholder="Su nombre" value="Ronald Lipez" maxlength="40" minlength="10" required autofocus >
     </div>
     <div>
       <input type="number" min="10" max="40" step="0.5" required title="¿Esto que es?">
     </div>
     <div>
-    <input type="text" pattern placeholder="Correo electrónico" required >
+    <input type="text" placeholder="Correo electrónico" required >
     </div>
     <div>
     <input type="date" required >
@@ -41,18 +41,62 @@
     <input type="time" required >
     </div>
     <div>
-    <input type="text" required >
+    <input type="text"  <input type="text" id="nombre" name="nombre" pattern="[A-Za-zÁáÉéÍíÓóÚúÑñ\s]+" required >
     </div>
+    <br>
+    <div>
+      <input type="radio" name="genero" > Femenino
+      <input type="radio" name="genero" > Masculino
+    </div>
+    <br>
+    <div>
+      <input type="checkbox" name="gusto"> Gusto 1
+      <input type="checkbox" name="gusto"> Gusto 2
+      <input type="checkbox" name="gusto"> Gusto 3
+      <input type="checkbox" name="gusto"> Gusto 4
+    </div>
+    <br>
+    <div>
+      <select name="ciudad" id="ciudad">
+      <option value="opciones"> Opciones </option>
+      <option value="bucaramanga"> Bucaramanga </option>
+      <option value="florida"> Florida </option>
+      <option value="giron"> Giron </option>
+      <option value="piedecuesta"> Piedecuesta </option>
+      <option value="lebrija"> Lebrija </option>
+      </select>
+    </div>
+    <br>
     <div>
       <input type="file" accept="application/pdf" multiple="multiple" >
     </div>
+    <br>
     <div>
-    <textarea name="contenido" id="contenido" rows="20" cols="50" placeholder="Su comentario" required> </textarea>
+    <textarea name="contenido" id="contenido" rows="14" cols="30" placeholder="Su comentario" required> </textarea>
     </div>
     <div>
     <button type="submit"> Enviar </button>
     </div>
-   </form>
+  </form>
+  <div>
+  <input type="text" placeholder="Por fuera" form="formulario">
+  </div>
+  <div>
+  <input type="serch" placeholder="buscar" form="formulario">
+  </div>
+  <div>
+  <input type="password" placeholder="contraseña" form="formulario">
+  </div>
+  <div>
+    <input type="text" name="user" form="formulario" autocomplete="of">
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
   </section>
 
 
